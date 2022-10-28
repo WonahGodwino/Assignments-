@@ -8,8 +8,9 @@ ul.sidenav {
   margin: 0;
   padding: 0;
   width: 25%;
-  background-color: #ea4343;
+  background-color:red;
   position: fixed;
+  text-align: justify;
   height: 100%;
   overflow: auto;
 }
@@ -20,7 +21,7 @@ h1{
 
 ul.sidenav li a {
   display: block;
-  color: #000;
+  color: white;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -54,11 +55,20 @@ div.content {
     height: auto;
    position: relative;
   }
-}
+
 
 @media screen and (max-width: 400px) {
   ul.sidenav li a {
     text-align: center;
     float: none;
   }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
