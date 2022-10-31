@@ -85,3 +85,10 @@ div.content {
   float: left;
 
 }
+.right{
+  width: 50%;
+}
+.right.p{
+  color: #ea4343;
+
+}
