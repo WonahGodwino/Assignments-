@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <ul class="sidenav" >
-    
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-      <div id="header"> </div>
-    <figma>
-        <img src="image/godwin.jpg" alt="Wonah Godwin" style=height:150px; width:100%> <br>
-        <strong>Wonah Godwin Okache </strong>
-        <div class="icons"> 
-            <table >
-                <tr align="center">
-                     <td> <img src="image/phone.png" alt="Wonah Godwin" style=height:50px></td>
-                     <td> <strong>07085059198<br>08129991374</strong></td>
-                </tr>
-                <tr align="center">
-                    <td> <img src="image/Gmail-Logo.png" alt="Wonah Godwin" style=height:50px></td>
-                    <td> <strong>atamswgo@gmail.com</strong></td>
-               </tr>
-              <tr align="center">
-                 <td> <img src="image/github.png" alt="Wonah Godwin" style=height:50px></td>
-                 <td> <strong><center><a href="https://github.com/WonahGodwino">Visit my GItHub Profile</a></strong></td>
-               </tr>
-               <tr align="center">
-                <td> <img src="image/Location.png" alt="Location" style=height:50px></td>
-                <td> <strong>Yala LGA, Cross River State, Nigeria</strong></td>
-           </tr>
-         </table>
-        </div>
-    
-         
-       </figma>
-      <div class="footer">
-        <center><p>Designed by Wonah Godwin @ Zuri Training Project <a href="https://portfolio.godwinokache.repl.co">Click here to View</a>  <small>Copyright @ 2022</small></p></center>
-      </div>
-    
+  <ul class="sidenav">
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div id="header"> </div>
+  <figma>
+    <img src="image/godwin.jpg" alt="Wonah Godwin" style=height:150px; width:100%> <br>
+    <strong>Wonah Godwin Okache </strong>
+    <div class="icons">
+      <table>
+        <tr align="center">
+          <td> <img src="image/phone.png" alt="Wonah Godwin" style=height:50px></td>
+          <td> <strong>07085059198<br>08129991374</strong></td>
+        </tr>
+        <tr align="center">
+          <td> <img src="image/Gmail-Logo.png" alt="Wonah Godwin" style=height:50px></td>
+          <td> <strong>atamswgo@gmail.com</strong></td>
+        </tr>
+        <tr align="center">
+          <td> <img src="image/github.png" alt="Wonah Godwin" style=height:50px></td>
+          <td> <strong><a href="https://github.com/WonahGodwino">Visit my GItHub Profile</a></strong></td>
+        </tr>
+        <tr align="center">
+          <td> <img src="image/twitter.png" alt="twitter" style=height:50px></td>
+          <td> <strong>@WonahGodwin5</strong></td>
+        </tr>
+        <tr align="center">
+          <td> <img src="image/Location.png" alt="Location" style=height:50px></td>
+          <td> <strong>Yala LGA, Cross River State, Nigeria</strong></td>
+        </tr>
+
+      </table>
+      <form name="contatme" action="success.html" method="post">
+        <section>
+          <fieldset>
+
+            <legend>Contat Me</legend>
+            <strong>
+              <h3>You Send me a direct message here</h3><br>
+              <h4> For Quick Resolution or Feedbacks, please, fill in the information below </h4>
+              <label for="FirstName"> First Name:</label><br>
+              <input type="text" name="FirstName" id="FirstName" placeholder="Enter your First Name" required><br> <br>
+              <label for="Surname">Surname:</label><br>
+               <input type="text" name="Surname" id="Surname"> placeholder="Enter your Surname" required> <br> <br>
+                <label for="phone"> Phone Number:</label><br>
+                <input type="tel" name="phone" id="phone" placeholder="+234780000000"><br> <br>
+                <label for="email"> Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com"> <br> <br>
+                <label for="Sex"> Sex:</label><br>
+                <select name="Sex" required>
+                  <option value=""> select your sex</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+                </select><br> <br>
+                <label for="subject"> Please Select the Subject of your message</label><br>
+                <select name="subject" required>
+                  <option value=""> select your Message Subject</option>
+                  <option value="Service Enquiries">Services</option>
+                  <option value="Past Projects">Past Projects</option>
+                  <option value="Current Projects">Current Projects</option>
+                </select><br> <small>Your message should not be more 200 characters</small><br>
+                <textarea id="message" name="message" rows="4" cols="50" maxlength="200">
+                    </textarea><br>
+                <input type="submit" name="submit" value="Submit" id="submit"><br> <br>
+            </strong>
+          </fieldset>
+
+        </section>
+
+      </form>
+    </div>
+
+
+  </figma><br>
+ 
+  <div class="footer">
+    <center>
+      <p>Designed by Wonah Godwin @ Zuri Training Project <a href="https://portfolio.godwinokache.repl.co">Click here to
+          View</a> <small>Copyright @ 2022</small></p>
+    </center>
+  </div>
+
 </body>
+
 </html>
